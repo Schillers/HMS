@@ -5,7 +5,7 @@ The Honeynet Management Suite is a set of scripts designed to aid the deployment
 
 ## Getting Started
 
-These scripts have been tested and built using Ubuntu 14.04 VPS builds. To ensure a smooth deployment, it is recommended that the same configuration is utilised when using these scripts.
+These scripts have been tested and built using Ubuntu 16.04 LTS VPS builds. To ensure a smooth deployment, it is recommended that the same configuration is utilised when using these scripts.
 
 ## Features
 * Deploy [Snake](https://github.com/countercept/snake)
