@@ -26,7 +26,7 @@ sudo apt-get install git -y
 Clone Repository:
 ```
 sudo git clone https://github.com/Schillers/HMS.git
-cd MHN/
+cd HMS/
 ```
 
 For the management server, deploy the tools:
