@@ -8,8 +8,9 @@ The Honeynet Management Suite is a set of scripts designed to aid the deployment
 These scripts have been tested and built using Ubuntu 14.04 VPS builds. To ensure a smooth deployment, it is recommended that the same configuration is utilised when using these scripts.
 
 ## Features
-* Deploy the [Malware Repository Framework (MRF)](https://github.com/Tigzy/malware-repo)
-* Deploy the [Modern Honey Network (MHN)](https://github.com/threatstream/mhn)
+* Deploy [Snake](https://github.com/countercept/snake)
+* Deploy [Malware Repository Framework (MRF)](https://github.com/Tigzy/malware-repo)
+* Deploy [Modern Honey Network (MHN)](https://github.com/threatstream/mhn)
 
 ## Installing
 
@@ -39,6 +40,6 @@ sudo ./build-management-server.sh
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-
+* [Snake](https://github.com/countercept/snake)
 * [Malware Repository Framework (MRF)](https://github.com/Tigzy/malware-repo)
 * [Modern Honey Network (MHN)](https://github.com/threatstream/mhn)
