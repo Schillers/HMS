@@ -1,6 +1,7 @@
 #!/bin/bash
 source ./managementserver/installmrf.sh
 source ./managementserver/installmhn.sh
+source ./managementserver/installsnake.sh
 
 #-----------------------------------------------
 #
@@ -39,7 +40,17 @@ sleep 2
 echo -e "\n\n### Updating your system and preparing for install ###"
 sleep 5
 apt-get update
+apt-get upgrade
 apt-get install nano git -y
+
+sleep 2
+read -r -p "Would you like to install the Snake? [Y/n] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY]|)+$ ]]
+then
+    installsnake
+else
+    :
+fi
 
 sleep 2
 read -r -p "Would you like to install the Malware Repository Framework (MRF)? [Y/n] " response
@@ -59,5 +70,18 @@ else
     :
 fi
 
-# TODO
-# Incorporate Server variable like server name and email address.
+#-----------------------------------------------
+#
+# Exit the installation script
+#
+#-----------------------------------------------
+echo -e "#########################################################"
+echo -e "##                                                     ##"
+echo -e "##                Thank you for using HMS              ##"
+echo -e "##                                                     ##"
+echo -e "##          H.M.S - Honeynet Management Suite          ##"
+echo -e "##                                                     ##"
+echo -e "##           https://github.com/Schillers/HMS          ##"
+echo -e "##                                                     ##"
+echo -e "#########################################################"
+sleep 5
