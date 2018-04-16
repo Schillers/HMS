@@ -8,6 +8,7 @@ source ./managementserver/installsnake.sh
 # Show title banner
 #
 #-----------------------------------------------
+clear
 echo -e "#########################################################"
 echo -e "##                                                     ##"
 echo -e "##          H.M.S - Honeynet Management Suite          ##"
