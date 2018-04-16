@@ -5,6 +5,7 @@ function installmrf {
 # Install the Malware Repository Freamework (MRF)
 #
 #-----------------------------------------------
+cd
 
 #-----------------------------------------------
 #
@@ -153,4 +154,5 @@ echo -e "\n\n### Downloading the Malware Repository Framework (MRF) ###"
 sleep 5
 curl -X POST http://localhost:8080/install/?install=true > /dev/null
 rm -r /var/www/html/mrf/install*
+cd
 }

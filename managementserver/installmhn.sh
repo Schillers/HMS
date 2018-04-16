@@ -5,6 +5,7 @@ function installmhn {
 # Install Modern Honey Network (MHN)
 #
 #-----------------------------------------------
+cd
 sleep 2
 echo -e "\n\n### Downloading Modern Honey Network (MHN)... ###"
 sleep 5
@@ -27,4 +28,5 @@ service supervisor status
 sleep 2
 echo -e "Checking the status of Modern Honey Network (MHN) processes...\n"
 supervisorctl status
+cd
 }
