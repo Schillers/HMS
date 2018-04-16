@@ -5,6 +5,7 @@ function installsnake {
 # Install Snake
 #
 #-----------------------------------------------
+cd
 sleep 2
 echo -e "\n\n### Downloading and installing Snake prerequisites... ###"
 sleep 5
@@ -84,4 +85,6 @@ systemctl start snake
 #-----------------------------------------------
 systemctl stop nginx
 systemctl start nginx
+
+cd ~
 }
