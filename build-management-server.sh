@@ -40,7 +40,7 @@ sleep 2
 echo -e "\n\n### Updating your system and preparing for install ###"
 sleep 5
 apt-get update
-apt-get upgrade
+apt-get upgrade -y
 apt-get install nano git -y
 
 sleep 2
