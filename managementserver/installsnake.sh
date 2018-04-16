@@ -66,8 +66,10 @@ APP_JS_FILENAME=$(find /var/www/snake-skin/static/js/ -type f -name app.*.js)
 sleep 2
 echo -e "\n\n### Configuring Snake to run on $HOST_IP_ADDR:8000... ###"
 sleep 5
+rm /etc/nginx/sites-enabled/default
 sed -i "s|127.0.0.1|$HOST_IP_ADDR|g" /etc/snake/snake.conf
 sed -i "s|127.0.0.1|$HOST_IP_ADDR|g" $APP_JS_FILENAME
+
 
 #-----------------------------------------------
 #
