@@ -10,10 +10,11 @@ sleep 2
 echo -e "\n\n### Downloading Modern Honey Network (MHN)... ###"
 sleep 5
 cd /opt/
-git clone https://github.com/threatstream/mhn.git-
+git clone https://github.com/threatstream/mhn.git
 sleep 2
 echo -e "\n\n### Installing Modern Honey Network (MHN)... ###"
 sleep 5
+cd mhn/
 ./install.sh
 
 sleep 2
