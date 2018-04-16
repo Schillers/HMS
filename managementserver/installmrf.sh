@@ -44,7 +44,9 @@ echo phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2 | debconf-s
 sleep 2
 echo -e "\n\n### Installing required packages for the Malware Repository Framework (MRF)... ###"
 sleep 5
-apt-get install lamp-server^ php5-curl phpmyadmin git -y
+add-apt-repository ppa:ondrej/php -y
+apt-get update
+apt-get install lamp-server^ php5.6-curl phpmyadmin git -y
 
 #-----------------------------------------------
 #
