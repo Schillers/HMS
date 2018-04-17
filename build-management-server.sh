@@ -45,7 +45,7 @@ apt-get upgrade -y
 apt-get install nano git -y
 
 sleep 2
-read -r -p "\n\n### Would you like to install the Snake? [Y/n] ###" response
+read -r -p "\n\n### Would you like to install Snake? [Y/n] ###" response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY]|)+$ ]]
 then
     installsnake
