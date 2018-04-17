@@ -45,7 +45,8 @@ apt-get upgrade -y
 apt-get install nano git -y
 
 sleep 2
-read -r -p "\n\n### Would you like to install Snake? [Y/n] ###" response
+echo -e "\n\n"
+read -r -p "### Would you like to install Snake? [Y/n] ###" response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY]|)+$ ]]
 then
     installsnake
@@ -54,7 +55,8 @@ else
 fi
 
 sleep 2
-read -r -p "\n\n### Would you like to install the Malware Repository Framework (MRF)? [Y/n] ###" response
+echo -e "\n\n"
+read -r -p "### Would you like to install the Malware Repository Framework (MRF)? [Y/n] ###" response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY]|)+$ ]]
 then
     installmrf
@@ -63,7 +65,8 @@ else
 fi
 
 sleep 2
-read -r -p "\n\n### Would you like to install the Modern Honey Network (MHN)? ### [Y/n] ###" response
+echo -e "\n\n"
+read -r -p "### Would you like to install the Modern Honey Network (MHN)? ### [Y/n] ###" response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY]|)+$ ]]
 then
     installmhn
